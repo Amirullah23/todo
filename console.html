@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        alert("This is ToDo App")
+        if (confirm('u want to make todo ?')) {
+            let a = prompt("your activity")
+            let b = (`
+            1 makan
+            2 tidur
+            3 lari
+            4 ${a}`)
+            alert(b)
+        } else {
+            if (confirm("you want to delete your list ?")) {
+                let e = prompt("type number your todo")
+                let f = e
+                if (e == "1") {
+                    alert(`
+                    1 tidur
+                    2 lari`)
+                } else if (e == "2") {
+                    alert(`
+                    1 makan
+                    2 lari`)
+                } else if (e == "3") {
+                    alert(`
+                    1 makan
+                    2 tidur`)
+                } else {
+                    alert('please choice number at todo :)')
+                }
+            } else {
+                alert('Okay see u and nice day')
+            }
+
+        }
+    </script>
+</body>
+
+</html>
